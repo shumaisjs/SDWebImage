@@ -358,7 +358,8 @@ NSString *const SDWebImageDownloadFinishNotification = @"SDWebImageDownloadFinis
 }
 
 - (UIImage *)scaledImageForKey:(NSString *)key image:(UIImage *)image {
-    return SDScaledImageForKey(key, image);
+    return image;
+//    return SDScaledImageForKey(key, image);
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)aConnection {
